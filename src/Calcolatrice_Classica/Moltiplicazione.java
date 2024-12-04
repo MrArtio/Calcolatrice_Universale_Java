@@ -1,3 +1,5 @@
+package Calcolatrice_Classica;
+
 public class Moltiplicazione {
     int numero1;
     int numero2;

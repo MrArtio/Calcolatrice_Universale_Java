@@ -1,3 +1,5 @@
+package Calcolatrice_Scientifica;
+
 public class Percentuale {
     int totale;
     int valore;

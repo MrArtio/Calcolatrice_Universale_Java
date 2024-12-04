@@ -1,6 +1,13 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.util.Scanner;
+import Calcolatrice_Classica.Divisione;
+import Calcolatrice_Classica.Moltiplicazione;
+import Calcolatrice_Classica.Somma;
+import Calcolatrice_Classica.Sottrazine;
+import Calcolatrice_Scientifica.Percentuale;
+import Calcolatrice_Scientifica.Radice;
+
+import java.util.*;
 
 public class Main {
     public static Scanner in = new Scanner(System.in);
