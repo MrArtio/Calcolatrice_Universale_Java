@@ -107,9 +107,5 @@ public class Main {
         System.out.print("\n) Esci");
         System.out.print("\n");
         System.out.print("\nSelezione: ");
-
-        int sel = in.nextInt();
-
-        
     }
 }
