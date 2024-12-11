@@ -5,6 +5,7 @@ import Calcolatrice_Classica.Somma;
 import Calcolatrice_Classica.Sottrazine;
 import Calcolatrice_Scientifica.Percentuale;
 import Calcolatrice_Scientifica.Radice;
+import Convertitore.ConvertitoreGrandezze;
 import Convertitore.ConvertitoreInBinario;
 
 import java.util.*;
@@ -130,9 +131,9 @@ public class Main {
 
     // Funzione per gestire il convertitore universale
     public static void convertitoreUniversale() {
+        // Menu delle opzioni del convertitore
         System.out.print("\nConvertitore Universale");
         System.out.print("\n");
-        // Menu delle opzioni del convertitore
         System.out.print("\n1) Decimale -> Binario");
         System.out.print("\n2) Valute");
         System.out.print("\n3) Grandezze(Gb/Mb)");
@@ -141,28 +142,106 @@ public class Main {
         System.out.print("\nSelezione: ");
 
         // Lettura della scelta dell'utente
-        int sel = in.nextInt();
+        int selConv = in.nextInt();
 
         // Ciclo che continua fino a quando l'utente non seleziona l'uscita
         do {
-            if (sel == 1) {
+            if (selConv == 1) {
                 // Conversione decimale -> binario: richiede un numero decimale
                 System.out.print("\nInserisci il numero da convertire in binario: ");
                 int decimale = in.nextInt();
                 ConvertitoreInBinario binario = new ConvertitoreInBinario(decimale);
                 binario.stampaRisultato(); // Stampa il risultato della conversione in binario
-            } else if (sel == 2) {
-                // Opzione non implementata: Conversione valute
-                System.out.print("\nInserisci il numero da calcolare: ");
-                int n1 = in.nextInt();
+                break;
+            } else if (selConv == 3) {
+                // Menu delle opzioni del convertitore
+                System.out.print("\nConvertitore Grandezze");
+                System.out.print("\n");
+                System.out.print("\n1) GB -> MB");
+                System.out.print("\n2) GB -> KB");
+                System.out.print("\n3) GB -> Byte");
+                System.out.print("\n4) MB -> GB");
+                System.out.print("\n5) MB -> KB");
+                System.out.print("\n6) MB -> Byte");
+                System.out.print("\n7) KB -> GB");
+                System.out.print("\n8) KB -> MB");
+                System.out.print("\n9) KB -> Byte");
+                System.out.print("\n10) Esci");
+                System.out.print("\n");
+                System.out.print("\nSelezione: ");
 
-            } else if (sel == 3) {
+                // Lettura della scelta dell'utente
+                int sel = in.nextInt();
+
+                // Ciclo che continua fino a quando l'utente non seleziona l'uscita
+                do {
+                    if (sel == 1) {
+                        // Calcolo conversione GB -> MB
+                        System.out.print("\nInserisci il numero da convertire da GB: ");
+                        int GB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(GB);
+                        cGrandezza.stampaConversioneDaGb();
+                        break; // Calcola e stampa il risultato della conversione
+                    } else if (sel == 2) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 3) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 4) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 5) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 6) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 7) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 8) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    } else if (sel == 9) {
+                        // Calcolo della radice quadrata: richiede un numero
+                        System.out.print("\nInserisci il numero da calcolare: ");
+                        int n1 = in.nextInt();
+                        Radice radice = new Radice(n1);
+                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                    }
+                } while (sel != 10); // Continua il ciclo finché l'utente non sceglie di uscire
+                System.out.print("\nProgramma chiuso con successo!"); // Messaggio di uscita
+
+            } else if (selConv == 2) {
                 // Opzione non implementata: Conversione grandezze (es. GB a MB)
                 System.out.print("\nInserisci il numero da calcolare: ");
                 int n1 = in.nextInt();
                 // Questo codice è non implementato, ma potrebbe essere usato per la conversione tra grandezze
             }
-        } while (sel != 4); // Continua il ciclo finché l'utente non sceglie di uscire
+        } while (selConv != 4); // Continua il ciclo finché l'utente non sceglie di uscire
         System.out.print("\nProgramma chiuso con successo!"); // Messaggio di uscita
     }
 }

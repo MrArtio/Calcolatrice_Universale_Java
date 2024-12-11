@@ -8,11 +8,44 @@ public class ConvertitoreGrandezze {
     private double kb;
     private double byteValue;
 
-    // Costruttore
-    public ConvertitoreGrandezze(double gb, double mb, double kb, double byteValue) {
+    // Costruttore vuoto
+    public ConvertitoreGrandezze() {
+        // Costruttore senza parametri, i valori verranno impostati tramite setter
+    }
+
+    // Getter e Setter per GB
+    public double getGb() {
+        return gb;
+    }
+
+    public void setGb(double gb) {
         this.gb = gb;
+    }
+
+    // Getter e Setter per MB
+    public double getMb() {
+        return mb;
+    }
+
+    public void setMb(double mb) {
         this.mb = mb;
+    }
+
+    // Getter e Setter per KB
+    public double getKb() {
+        return kb;
+    }
+
+    public void setKb(double kb) {
         this.kb = kb;
+    }
+
+    // Getter e Setter per Byte
+    public double getByteValue() {
+        return byteValue;
+    }
+
+    public void setByteValue(double byteValue) {
         this.byteValue = byteValue;
     }
 
@@ -65,35 +98,37 @@ public class ConvertitoreGrandezze {
         return this.byteValue / 1024;  // 1 Byte = 1/1024 KB
     }
 
-    // Metodo per stampare il risultato finale
-    public void stampaRisultati() {
-        System.out.println("Conversione da GB:");
-        System.out.println("GB a MB: " + convertiGBaMB());
-        System.out.println("GB a KB: " + convertiGBaKB());
-        System.out.println("GB a Byte: " + convertiGBaByte());
+    // Metodi per stampare i risultati delle conversioni
 
-        System.out.println("\nConversione da MB:");
-        System.out.println("MB a GB: " + convertiMBaGB());
-        System.out.println("MB a KB: " + convertiMBaKB());
-        System.out.println("MB a Byte: " + convertiMBaByte());
-
-        System.out.println("\nConversione da KB:");
-        System.out.println("KB a GB: " + convertiKBaGB());
-        System.out.println("KB a MB: " + convertiKBaMB());
-        System.out.println("KB a Byte: " + convertiKBaByte());
-
+    public void stampaConversioneDaByte() {
+        // Conversione da Byte
         System.out.println("\nConversione da Byte:");
         System.out.println("Byte a GB: " + convertiByteaGB());
         System.out.println("Byte a MB: " + convertiByteaMB());
         System.out.println("Byte a KB: " + convertiByteaKB());
     }
 
-    public static void main(String[] args) {
-        // Creazione dell'oggetto ConvertitoreGrandezze con valori di esempio
-        ConvertitoreGrandezze convertitore = new ConvertitoreGrandezze(5, 5120, 5242880, 5368709120L);
+    public void stampaConversioneDaKb() {
+        // Conversione da KB
+        System.out.println("\nConversione da KB:");
+        System.out.println("KB a GB: " + convertiKBaGB());
+        System.out.println("KB a MB: " + convertiKBaMB());
+        System.out.println("KB a Byte: " + convertiKBaByte());
+    }
 
-        // Stampa dei risultati di conversione
-        convertitore.stampaRisultati();
+    public void stampaConversioneDaMb() {
+        // Conversione da MB
+        System.out.println("\nConversione da MB:");
+        System.out.println("MB a GB: " + convertiMBaGB());
+        System.out.println("MB a KB: " + convertiMBaKB());
+        System.out.println("MB a Byte: " + convertiMBaByte());
+    }
+
+    public void stampaConversioneDaGb() {
+        // Conversione da GB
+        System.out.println("Conversione da GB:");
+        System.out.println("GB a MB: " + convertiGBaMB());
+        System.out.println("GB a KB: " + convertiGBaKB());
+        System.out.println("GB a Byte: " + convertiGBaByte());
     }
 }
-

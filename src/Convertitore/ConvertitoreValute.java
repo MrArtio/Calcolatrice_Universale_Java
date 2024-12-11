@@ -51,8 +51,8 @@ public class ConvertitoreValute {
         return this.francoSvizzero / 0.97;  // Esempio di cambio (1 CHF = 1.03 EUR)
     }
 
-    // Metodo per stampare il risultato finale
-    public void stampaRisultati() {
+    // Metodo per stampare i risultati delle conversioni
+    public void stampa() {
         System.out.println("Conversione da Euro:");
         System.out.println("Euro a Dollaro: " + convertiEuroADollaro());
         System.out.println("Euro a Sterlina: " + convertiEuroAsterlina());
@@ -71,13 +71,4 @@ public class ConvertitoreValute {
         System.out.println("\nConversione da Franco Svizzero:");
         System.out.println("Franco Svizzero a Euro: " + convertiFrancoSvizzeroAEuro());
     }
-
-    public static void main(String[] args) {
-        // Creazione dell'oggetto ConvertitoreValute con valori di esempio
-        ConvertitoreValute convertitore = new ConvertitoreValute(100, 106, 86, 14853, 97);
-
-        // Stampa dei risultati di conversione
-        convertitore.stampaRisultati();
-    }
 }
-
