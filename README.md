@@ -24,5 +24,5 @@ Questa calcolatrice è stata sviluppata in Java con l'obiettivo di fornire un'am
 | Non Funziona              | Calcoli                                               |
 |---------------------------|-------------------------------------------------------|
 | :x:                       | GB, MB, KB, Byte                                      |
-| :x:                       | Valita - Lavoro in corso...                           |
+| :x:                       | Valuta - Lavoro in corso...                           |
 
