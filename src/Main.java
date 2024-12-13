@@ -177,60 +177,76 @@ public class Main {
                 do {
                     if (sel == 1) {
                         // Calcolo conversione GB -> MB
-                        System.out.print("\nInserisci il numero da convertire da GB: ");
+                        System.out.print("\nInserisci il numero da convertire da GB a MB: ");
                         int GB = in.nextInt();
                         ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
                         cGrandezza.setGb(GB);
-                        cGrandezza.stampaConversioneDaGb();
+                        cGrandezza.stampaConversioneGbaMb();
                         break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 2) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione GB -> Kb
+                        System.out.print("\nInserisci il numero da convertire da GB a Kb: ");
+                        int GB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(GB);
+                        cGrandezza.stampaConversioneGbaKb();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 3) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione GB -> Byte
+                        System.out.print("\nInserisci il numero da convertire da GB a Byte: ");
+                        int GB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(GB);
+                        cGrandezza.stampaConversioneGbaByte();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 4) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Mb -> Byte
+                        System.out.print("\nInserisci il numero da convertire da MB a Byte: ");
+                        int MB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(MB);
+                        cGrandezza.stampaConversioneDaMbaByte();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 5) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Mb -> Kb
+                        System.out.print("\nInserisci il numero da convertire da MB a Kb: ");
+                        int MB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(MB);
+                        cGrandezza.stampaConversioneDaMbaKb();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 6) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Mb -> Gb
+                        System.out.print("\nInserisci il numero da convertire da MB a Gb: ");
+                        int MB = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(MB);
+                        cGrandezza.stampaConversioneDaMbaGb();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 7) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Byte -> Gb
+                        System.out.print("\nInserisci il numero da convertire da Byte a Gb: ");
+                        int Byte = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(Byte);
+                        cGrandezza.stampaConversioneDaByteaGb();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 8) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Byte -> Mb
+                        System.out.print("\nInserisci il numero da convertire da Byte a Mb: ");
+                        int Byte = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(Byte);
+                        cGrandezza.stampaConversioneDaByteaMb();
+                        break; // Calcola e stampa il risultato della conversione
                     } else if (sel == 9) {
-                        // Calcolo della radice quadrata: richiede un numero
-                        System.out.print("\nInserisci il numero da calcolare: ");
-                        int n1 = in.nextInt();
-                        Radice radice = new Radice(n1);
-                        radice.calcoloRadice(); // Calcola e stampa il risultato della radice quadrata
+                        // Calcolo conversione Byte -> Kb
+                        System.out.print("\nInserisci il numero da convertire da Byte a Kb: ");
+                        int Byte = in.nextInt();
+                        ConvertitoreGrandezze cGrandezza = new ConvertitoreGrandezze();
+                        cGrandezza.setGb(Byte);
+                        cGrandezza.stampaConversioneDaByteaKb();
+                        break; // Calcola e stampa il risultato della conversione
                     }
                 } while (sel != 10); // Continua il ciclo finché l'utente non sceglie di uscire
                 System.out.print("\nProgramma chiuso con successo!"); // Messaggio di uscita

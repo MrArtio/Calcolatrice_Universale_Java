@@ -100,35 +100,48 @@ public class ConvertitoreGrandezze {
 
     // Metodi per stampare i risultati delle conversioni
 
-    public void stampaConversioneDaByte() {
-        // Conversione da Byte
-        System.out.println("\nConversione da Byte:");
-        System.out.println("Byte a GB: " + convertiByteaGB());
-        System.out.println("Byte a MB: " + convertiByteaMB());
-        System.out.println("Byte a KB: " + convertiByteaKB());
+    public void stampaConversioneDaByteaGb() {
+        // Conversione da Byte a Gb
+        System.out.print("\nConversione da Byte a Gb: " + convertiByteaGB());
     }
 
-    public void stampaConversioneDaKb() {
-        // Conversione da KB
-        System.out.println("\nConversione da KB:");
-        System.out.println("KB a GB: " + convertiKBaGB());
-        System.out.println("KB a MB: " + convertiKBaMB());
-        System.out.println("KB a Byte: " + convertiKBaByte());
+    public void stampaConversioneDaByteaMb() {
+        // Conversione da Byte a Mb
+        System.out.print("\nConversione da Byte a Mb: " + convertiByteaMB());
     }
 
-    public void stampaConversioneDaMb() {
-        // Conversione da MB
-        System.out.println("\nConversione da MB:");
-        System.out.println("MB a GB: " + convertiMBaGB());
-        System.out.println("MB a KB: " + convertiMBaKB());
-        System.out.println("MB a Byte: " + convertiMBaByte());
+    public void stampaConversioneDaByteaKb() {
+        // Conversione da Byte a Kb
+        System.out.print("\nConversione da Byte a Kb: " + convertiByteaKB());
     }
 
-    public void stampaConversioneDaGb() {
-        // Conversione da GB
-        System.out.println("Conversione da GB:");
-        System.out.println("GB a MB: " + convertiGBaMB());
-        System.out.println("GB a KB: " + convertiGBaKB());
-        System.out.println("GB a Byte: " + convertiGBaByte());
+    public void stampaConversioneDaMbaByte() {
+        // Conversione da Mb a Byte
+        System.out.print("\nConversione da Mb a Byte: " + convertiMBaByte());
+    }
+
+    public void stampaConversioneDaMbaKb() {
+        // Conversione da Mb a Kb
+        System.out.print("\nConversione da Mb a Kb: " + convertiMBaKB());
+    }
+
+    public void stampaConversioneDaMbaGb() {
+        // Conversione da Mb a Gb
+        System.out.print("\nConversione da Mb a Gb: " + convertiMBaGB());
+    }
+
+    public void stampaConversioneGbaByte() {
+        // Conversione da Gb a Byte
+        System.out.print("\nConversione da Gb a Byte: " + convertiGBaByte());
+    }
+
+    public void stampaConversioneGbaKb() {
+        // Conversione da Gb a Kb
+        System.out.print("\nConversione da Gb a Kb: " + convertiGBaKB());
+    }
+
+    public void stampaConversioneGbaMb() {
+        // Conversione da Gb a Mb
+        System.out.print("\nConversione da Gb a Mb: " + convertiGBaMB());
     }
 }
