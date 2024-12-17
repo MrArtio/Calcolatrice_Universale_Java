@@ -8,11 +8,6 @@ public class ConvertitoreGrandezze {
     private double kb;
     private double byteValue;
 
-    // Costruttore vuoto
-    public ConvertitoreGrandezze() {
-        // Costruttore senza parametri, i valori verranno impostati tramite setter
-    }
-
     // Getter e Setter per GB
     public double getGb() {
         return gb;
@@ -50,98 +45,88 @@ public class ConvertitoreGrandezze {
     }
 
     // Funzioni di conversione tra le grandezze
-    public double convertiGBaMB() {
-        return this.gb * 1024;  // 1 GB = 1024 MB
+    public static double convertiGBaMB(double gb) {
+        return gb * 1024;  // 1 GB = 1024 MB
     }
 
-    public double convertiGBaKB() {
-        return this.gb * 1024 * 1024;  // 1 GB = 1024 * 1024 KB
+    public static double convertiGBaKB(double gb) {
+        return gb * 1024 * 1024;  // 1 GB = 1024 * 1024 KB
     }
 
-    public double convertiGBaByte() {
-        return this.gb * 1024 * 1024 * 1024;  // 1 GB = 1024 * 1024 * 1024 Byte
+    public static double convertiGBaByte(double gb) {
+        return gb * 1024 * 1024 * 1024;  // 1 GB = 1024 * 1024 * 1024 Byte
     }
 
-    public double convertiMBaGB() {
-        return this.mb / 1024;  // 1 MB = 1/1024 GB
+    public static double convertiMBaGB(double mb) {
+        return mb / 1024;  // 1 MB = 1/1024 GB
     }
 
-    public double convertiMBaKB() {
-        return this.mb * 1024;  // 1 MB = 1024 KB
+    public static double convertiMBaKB(double mb) {
+        return mb * 1024;  // 1 MB = 1024 KB
     }
 
-    public double convertiMBaByte() {
-        return this.mb * 1024 * 1024;  // 1 MB = 1024 * 1024 Byte
+    public static double convertiMBaByte(double mb) {
+        return mb * 1024 * 1024;  // 1 MB = 1024 * 1024 Byte
     }
 
-    public double convertiKBaGB() {
-        return this.kb / (1024 * 1024);  // 1 KB = 1/(1024 * 1024) GB
+    public static double convertiKBaGB(double kb) {
+        return kb / (1024 * 1024);  // 1 KB = 1/(1024 * 1024) GB
     }
 
-    public double convertiKBaMB() {
-        return this.kb / 1024;  // 1 KB = 1/1024 MB
+    public static double convertiKBaMB(double kb) {
+        return kb / 1024;  // 1 KB = 1/1024 MB
     }
 
-    public double convertiKBaByte() {
-        return this.kb * 1024;  // 1 KB = 1024 Byte
+    public static double convertiKBaByte(double kb) {
+        return kb * 1024;  // 1 KB = 1024 Byte
     }
 
-    public double convertiByteaGB() {
-        return this.byteValue / (1024 * 1024 * 1024);  // 1 Byte = 1/(1024 * 1024 * 1024) GB
+    public static double convertiByteaGB(double byteValue) {
+        return byteValue / (1024 * 1024 * 1024);  // 1 Byte = 1/(1024 * 1024 * 1024) GB
     }
 
-    public double convertiByteaMB() {
-        return this.byteValue / (1024 * 1024);  // 1 Byte = 1/(1024 * 1024) MB
+    public static double convertiByteaMB(double byteValue) {
+        return byteValue / (1024 * 1024);  // 1 Byte = 1/(1024 * 1024) MB
     }
 
-    public double convertiByteaKB() {
-        return this.byteValue / 1024;  // 1 Byte = 1/1024 KB
+    public static double convertiByteaKB(double byteValue) {
+        return byteValue / 1024;  // 1 Byte = 1/1024 KB
     }
 
     // Metodi per stampare i risultati delle conversioni
-
-    public void stampaConversioneDaByteaGb() {
-        // Conversione da Byte a Gb
-        System.out.print("\nConversione da Byte a Gb: " + convertiByteaGB());
+    public static void stampaConversioneDaByteaGb(double byteValue) {
+        System.out.printf("\nConversione da Byte a GB: %.2f", convertiByteaGB(byteValue));
     }
 
-    public void stampaConversioneDaByteaMb() {
-        // Conversione da Byte a Mb
-        System.out.print("\nConversione da Byte a Mb: " + convertiByteaMB());
+    public static void stampaConversioneDaByteaMb(double byteValue) {
+        System.out.printf("\nConversione da Byte a MB: %.2f", convertiByteaMB(byteValue));
     }
 
-    public void stampaConversioneDaByteaKb() {
-        // Conversione da Byte a Kb
-        System.out.print("\nConversione da Byte a Kb: " + convertiByteaKB());
+    public static void stampaConversioneDaByteaKb(double byteValue) {
+        System.out.printf("\nConversione da Byte a KB: %.2f", convertiByteaKB(byteValue));
     }
 
-    public void stampaConversioneDaMbaByte() {
-        // Conversione da Mb a Byte
-        System.out.print("\nConversione da Mb a Byte: " + convertiMBaByte());
+    public static void stampaConversioneDaMbaByte(double mb) {
+        System.out.printf("\nConversione da MB a Byte: %.2f", convertiMBaByte(mb));
     }
 
-    public void stampaConversioneDaMbaKb() {
-        // Conversione da Mb a Kb
-        System.out.print("\nConversione da Mb a Kb: " + convertiMBaKB());
+    public static void stampaConversioneDaMbaKb(double mb) {
+        System.out.printf("\nConversione da MB a KB: %.2f", convertiMBaKB(mb));
     }
 
-    public void stampaConversioneDaMbaGb() {
-        // Conversione da Mb a Gb
-        System.out.print("\nConversione da Mb a Gb: " + convertiMBaGB());
+    public static void stampaConversioneDaMbaGb(double mb) {
+        System.out.printf("\nConversione da MB a GB: %.2f", convertiMBaGB(mb));
     }
 
-    public void stampaConversioneGbaByte() {
-        // Conversione da Gb a Byte
-        System.out.print("\nConversione da Gb a Byte: " + convertiGBaByte());
+    public static void stampaConversioneGbaByte(double gb) {
+        System.out.printf("\nConversione da GB a Byte: %.2f", convertiGBaByte(gb));
     }
 
-    public void stampaConversioneGbaKb() {
-        // Conversione da Gb a Kb
-        System.out.print("\nConversione da Gb a Kb: " + convertiGBaKB());
+    public static void stampaConversioneGbaKb(double gb) {
+        System.out.printf("\nConversione da GB a KB: %.2f", convertiGBaKB(gb));
     }
 
-    public void stampaConversioneGbaMb() {
-        // Conversione da Gb a Mb
-        System.out.print("\nConversione da Gb a Mb: " + convertiGBaMB());
+    public static void stampaConversioneGbaMb(double gb) {
+        System.out.printf("\nConversione da GB a MB: %.2f", convertiGBaMB(gb));
     }
 }
