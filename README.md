@@ -1,7 +1,5 @@
 # Calcolatrice Universale Java: [![wakatime](https://wakatime.com/badge/github/MrArtio/Calcolatrice_Universale_Java.svg)](https://wakatime.com/badge/github/MrArtio/Calcolatrice_Universale_Java)
 
-[![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/5a627376-fc67-4e5b-9a60-154c6a1436a1.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/5a627376-fc67-4e5b-9a60-154c6a1436a1)
-
 ## Descrizione
 Questa calcolatrice è stata sviluppata in Java con l'obiettivo di fornire un'ampia gamma di funzionalità matematiche, da semplici operazioni aritmetiche a conversioni di unità. L'interfaccia utente è progettata per essere intuitiva e facile da usare, rendendola adatta a utenti di tutti i livelli.
 
